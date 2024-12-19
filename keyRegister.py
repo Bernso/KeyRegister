@@ -1,5 +1,5 @@
 try:
-    from boLogger import Logging, CustomLog
+    from boLogger import CustomLog
     import tkinter as tk
     from pynput import keyboard
     import threading
@@ -10,8 +10,8 @@ except ImportWarning as e:
     input(e)
 
 length = 30
-mylogger = CustomLog()
-#mylogger.set_default(bold=True, color='BRed', title="Extra", underlined=False)
+mylogger = CustomLog(length)
+#mylogger.set_default(bold=True, color='BRed', title="Extra", underlined=False) # Example usage for my package
 
 
 class KeyCounterApp:
